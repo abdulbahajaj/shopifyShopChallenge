@@ -3,18 +3,39 @@ This is the barebones of an online marketplace. It is implemented using Django, 
 
 This program exposes a GraphQL API at 0.0.0.0/graphql.
 
-##To run the program:
+## To run the program:
 1) Create a virtual environment with python 3.7 by running "virtualenv -p python3 {environmentName}" in your terminate.
 2) Activate the environment by running "source {environmentName}/bin/activate"
 3) Pull this repo
 4) Go to the folder containing the repo in your terminal
-5) run "pip install requirements.txt"
-6) run "python manage.py runserver"
-
-
+5) Run "pip install requirements.txt"
+6) Run "python manage.py runserver" to run the server
+7) The graphql api should be now available in 0.0.0.0/graphql
 
 Global ids are formated as follows: "NodeType_InternalID". For example ProductType_1 or CartType_1.
 This API supports two node types ProductType and CartType.
+
+
+
+## Default data
+Currently the following products are in the shop:
+```json
+[
+  {"title": "Cheese", "price": 4.3, "inventory_count": 10}, 
+  {"title": "Milk", "price": 6.3, "inventory_count": 13}, 
+  {"title": "Tomato", "price": 9.4, "inventory_count": 23}, 
+  {"title": "Banana", "price": 10.4, "inventory_count": 43}, 
+  {"title": "Potato", "price": 13.4, "inventory_count": 45}, 
+  {"title": "Bread", "price": 5.8, "inventory_count": 85}, 
+  {"title": "Bagels", "price": 7.8, "inventory_count": 77}, 
+  {"title": "Chokos", "price": 4.8, "inventory_count": 47}, 
+  {"title": "Mushrooms", "price": 2.8, "inventory_count": 17}, 
+  {"title": "Yams", "price": 8.8, "inventory_count": 13}
+]
+```
+It also has one cart with Milk and Cheese in it
+
+
 
 ## It supports the following queries.
 
