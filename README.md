@@ -3,7 +3,7 @@ This is the barebones of an online marketplace. It is implemented using Django, 
 
 This program exposes a GraphQL API at 0.0.0.0/graphql.
 
-## To run the program:
+## How to run the program:
 1) Create a virtual environment with python 3.7 by running "virtualenv -p python3 {environmentName}" in your terminate.
 2) Activate the environment by running "source {environmentName}/bin/activate"
 3) Pull this repo
@@ -15,6 +15,11 @@ This program exposes a GraphQL API at 0.0.0.0/graphql.
 Global ids are formated as follows: "NodeType_InternalID". For example ProductType_1 or CartType_1.
 This API supports two node types ProductType and CartType.
 
+You can also download this public docker image and run it. It exposed port 8000.
+https://cloud.docker.com/u/abdulbahajaj/repository/docker/abdulbahajaj/graphqlshop
+
+I have also deployed it to digital ocean Kubernates at the following link
+http://157.230.75.162/graphql
 
 
 ## Default data
@@ -34,6 +39,7 @@ Currently the following products are in the shop:
 ]
 ```
 It also has one cart with Milk and Cheese in it
+
 
 
 
