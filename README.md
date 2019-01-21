@@ -3,7 +3,7 @@ This is the barebones of an online marketplace. It is implemented using Django, 
 
 This program exposes a GraphQL API at 0.0.0.0/graphql.
 
-##To run the program:
+## To run the program:
 1) Create a virtual environment with python 3.7 by running "virtualenv -p python3 {environmentName}" in your terminate.
 2) Activate the environment by running "source {environmentName}/bin/activate"
 3) Pull this repo
