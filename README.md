@@ -101,7 +101,7 @@ mutation{
 ### Deletes a cart
 ```graphql
 mutation{
-	deleteCart(id: "CartType_1"){
+	deleteCart(id: ){
     status
     description
   }
