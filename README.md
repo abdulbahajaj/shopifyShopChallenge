@@ -46,6 +46,8 @@ Currently the following products are in the shop:
   {"title": "Chokos", "price": 4.8, "inventory_count": 47}, 
   {"title": "Mushrooms", "price": 2.8, "inventory_count": 17}, 
   {"title": "Yams", "price": 8.8, "inventory_count": 13}
+  {"title": "Eggplant", "price": 23.0, "inventory_count": 0}
+  {"title": "Okra", "price": 23.0, "inventory_count": 0}
 ]
 ```
 It also has one cart with Milk and Cheese in it
