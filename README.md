@@ -1,7 +1,7 @@
 # Shopify intern challenge.
 This is the barebones of an online marketplace. It is implemented using Django, Python, graphene and SQLlite.
 
-This program exposes a GraphQL API at 0.0.0.0/graphql.
+This program exposes a GraphQL API at localhost/graphql.
 
 ## How to run the program:
 1) Create a virtual environment with python 3.7 by running "virtualenv -p python3 {environmentName}" in your terminate.
