@@ -143,6 +143,8 @@ mutation{
   }
 }
 ```
+example: http://157.230.75.162/graphql?query=mutation%7B%0A%20%20createCart%7B%0A%20%20%20%20status%0A%20%20%20%20description%0A%20%20%20%20cart%7B%0A%20%20%20%20%20%20id%0A%20%20%20%20%20%20products%7B%0A%20%20%20%20%20%20%20%20id%0A%20%20%20%20%20%20%20%20price%0A%20%20%20%20%20%20%20%20title%0A%20%20%20%20%20%20%20%20inventoryCount%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A&operationName=undefined
+
 
 ### Deletes a cart
 ```graphql
@@ -153,16 +155,21 @@ mutation{
   }
 }
 ```
+example: http://157.230.75.162/graphql?query=mutation%7B%0A%20%20deleteCart(id%3A%20%22CartType_2%22)%7B%0A%20%20%20%20status%0A%20%20%20%20description%0A%20%20%7D%0A%7D%0A&operationName=undefined
 
 ### Adds a product to a cart
 ```graphql
 mutation{
-  deleteCart(id: {str cart_id}){
+  addProductToCart(
+    productId: "ProductType_1",
+    cartId: "CartType_1"
+  ){
     status
     description
   }
 }
 ```
+example: http://157.230.75.162/graphql?query=mutation%7B%0A%20%20addProductToCart(%0A%20%20%20%20productId%3A%20%22ProductType_1%22%2C%0A%20%20%20%20cartId%3A%20%22CartType_1%22%0A%20%20)%7B%0A%20%20%20%20status%0A%20%20%20%20description%0A%20%20%7D%0A%7D%0A&operationName=undefined
 
 ### Removes a product from a cart
 ```graphql
@@ -176,6 +183,7 @@ mutation{
   }
 }
 ```
+example: http://157.230.75.162/graphql?query=mutation%7B%0A%20%20removeProductFromCart(%0A%20%20%20%20cartId%3A%20%22CartType_1%22%0A%20%20%20%20productId%3A%20%22ProductType_1%22%0A%20%20)%7B%0A%20%20%20%20status%0A%20%20%20%20description%0A%20%20%7D%0A%7D%0A&operationName=undefined
 
 ### Purchase a cart
 ```graphql
@@ -186,7 +194,7 @@ mutation{
   }
 }
 ```
-
+example: http://157.230.75.162/graphql?query=mutation%7B%0A%20%20purchaseCart(id%3A%20%22CartType_1%22)%7B%0A%20%20%20%20status%0A%20%20%20%20description%0A%20%20%7D%0A%7D%0A&operationName=undefined
 
 
 
