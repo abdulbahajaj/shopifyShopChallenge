@@ -20,34 +20,34 @@ This program exposes a GraphQL API at /graphql
 ### Retrieves all products with available inventory.
 ```graphql
 {
-allProducts(availableOnly: false) {
-id
-title
-price
-inventoryCount
-}
+  allProducts(availableOnly: false) {
+    id
+    title
+    price
+    inventoryCount
+  }
 }
 ```
 
 ### Retrieves all carts with the products that are in them.
 ```graphql
 {
-allCarts{
-edges{
-node{
-id
-created
-purchased
-totalDollarAmount
-products{
-id
-title
-inventoryCount
-price     
-}
-}
-}
-}
+  allCarts{
+    edges{
+      node{
+        id
+        created
+        purchased
+        totalDollarAmount
+        products{
+          id
+          title
+          inventoryCount
+          price     
+        }
+      }
+    }
+  }
 }
 ```
 
