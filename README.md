@@ -8,12 +8,12 @@ This program exposes a GraphQL API at /graphql
 ### Retrieves all products regardless of whether or not there is available inventory.
 ```graphql
 {
-allProducts(availableOnly: false) {
-id
-title
-price
-inventoryCount
-}
+	allProducts(availableOnly: false) {
+		id
+		title
+		price
+		inventoryCount
+	}
 }
 ```
 
