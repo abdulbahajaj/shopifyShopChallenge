@@ -20,7 +20,7 @@ This program exposes a GraphQL API at /graphql
 ### Retrieves all products with available inventory.
 ```graphql
 {
-  allProducts(availableOnly: false) {
+  allProducts(availableOnly: true) {
     id
     title
     price
@@ -101,7 +101,7 @@ mutation{
 ### Deletes a cart
 ```graphql
 mutation{
-  deleteCart(id: ){
+  deleteCart(id: {str cart_id}){
     status
     description
   }
