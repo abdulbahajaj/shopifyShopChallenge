@@ -101,7 +101,7 @@ mutation{
 ### Deletes a cart
 ```graphql
 mutation{
-	deleteCart(id: ){
+  deleteCart(id: ){
     status
     description
   }
@@ -111,7 +111,7 @@ mutation{
 ### Adds a product to a cart
 ```graphql
 mutation{
-	deleteCart(id: "CartType_1"){
+  deleteCart(id: {str cart_id}){
     status
     description
   }
@@ -121,9 +121,9 @@ mutation{
 ### Removes a product from a cart
 ```graphql
 mutation{
-	removeProductFromCart(
-    cartId: "CartType_1"
-    productId: "ProductType_1"
+  removeProductFromCart(
+    cartId: {str cart_id}
+    productId: {str product_id}
   ){
     status
     description
@@ -134,7 +134,7 @@ mutation{
 ### Purchase a cart
 ```graphql
 mutation{
-  purchaseCart(id: "CartType_3"){
+  purchaseCart(id: {str cart_id}){
     status
     description
   }
