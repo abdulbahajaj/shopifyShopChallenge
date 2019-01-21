@@ -8,46 +8,46 @@ This program exposes a GraphQL API at /graphql
 ### Retrieves all products regardless of whether or not there is available inventory.
 ```graphql
 {
-	allProducts(availableOnly: false) {
-		id
-		title
-		price
-		inventoryCount
-	}
+allProducts(availableOnly: false) {
+id
+title
+price
+inventoryCount
+}
 }
 ```
 
 ### Retrieves all products with available inventory.
 ```graphql
 {
-	allProducts(availableOnly: false) {
-		id
-		title
-		price
-		inventoryCount
-	}
+allProducts(availableOnly: false) {
+id
+title
+price
+inventoryCount
+}
 }
 ```
 
 ### Retrieves all carts with the products that are in them.
 ```graphql
 {
-	allCarts{
-		edges{
-			node{
-				id
-				created
-				purchased
-				totalDollarAmount
-				products{
-					id
-					title
-					inventoryCount
-					price     
-				}
-			}
-		}
-	}
+allCarts{
+edges{
+node{
+id
+created
+purchased
+totalDollarAmount
+products{
+id
+title
+inventoryCount
+price     
+}
+}
+}
+}
 }
 ```
 
@@ -56,26 +56,26 @@ This program exposes a GraphQL API at /graphql
 ### Creates a new product
 ```graphql
 mutation {
-	createProduct(title: {str product_title}, inventoryCount: {int inventory_count}, price: { float product_price }) {
-		status
-		description
-		product {
-			id
-			title
-			price
-			inventoryCount
-		}
-	}
+createProduct(title: {str product_title}, inventoryCount: {int inventory_count}, price: { float product_price }) {
+status
+description
+product {
+id
+title
+price
+inventoryCount
+}
+}
 }
 ```
 
 ### Deletes a product
 ```graphql
 mutation{
-	deleteProduct(id: {str product_id}){
-    		status
-    		description
-	} 
+deleteProduct(id: {str product_id}){
+status
+description
+} 
 }
 ```
 
