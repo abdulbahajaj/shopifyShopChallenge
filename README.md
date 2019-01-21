@@ -1,11 +1,11 @@
-# Shopify intern challenge
+# Shopify intern challenge.
 This is the barebones of an online marketplace. It is implemented using Django, Python, graphene and SQLlite.
 
 This program exposes a GraphQL API at /graphql
 
-## It supports the following queries
+## It supports the following queries.
 
-### Retrieves all products regardless of whether or not there is available inventory
+### Retrieves all products regardless of whether or not there is available inventory.
 ```graphql
 {
   allProducts(availableOnly: false) {
@@ -17,7 +17,7 @@ This program exposes a GraphQL API at /graphql
 }
 ```
 
-### Retrieves all products with available inventory
+### Retrieves all products with available inventory.
 ```graphql
 {
   allProducts(availableOnly: false) {
@@ -29,7 +29,7 @@ This program exposes a GraphQL API at /graphql
 }
 ```
 
-### Retrieves all carts
+### Retrieves all carts with the products that are in them.
 ```graphql
 {
   allCarts{
