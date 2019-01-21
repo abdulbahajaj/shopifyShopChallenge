@@ -1,7 +1,17 @@
 # Shopify intern challenge.
 This is the barebones of an online marketplace. It is implemented using Django, Python, graphene and SQLlite.
 
-This program exposes a GraphQL API at /graphql
+This program exposes a GraphQL API at 0.0.0.0/graphql.
+
+##To run the program:
+1) Create a virtual environment with python 3.7 by running "virtualenv -p python3 {environmentName}" in your terminate.
+2) Activate the environment by running "source {environmentName}/bin/activate"
+3) Pull this repo
+4) Go to the folder containing the repo in your terminal
+5) run "pip install requirements.txt"
+6) run "python manage.py runserver"
+
+
 
 Global ids are formated as follows: "NodeType_InternalID". For example ProductType_1 or CartType_1.
 This API supports two node types ProductType and CartType.
