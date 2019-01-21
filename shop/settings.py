@@ -25,8 +25,7 @@ SECRET_KEY = 'pb4)%(g3bbh+%=n^no*3-dl!km+*p!ft%inmju0a_@a^yw!4^_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0']
-
+ALLOWED_HOSTS = [ "*" ]
 
 # Application definition
 

@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: graphqlshopdeployment
+  labels:
+    app: graphqlshopdeploymentlabel
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: graphqlshoppodlabel
+  template:
+    metadata:
+      name: podname
+      labels:
+        app: graphqlshoppodlabel
+    spec:
+      containers:
+      - name: graphqlshopcontainer
+        image: abdulbahajaj/graphqlshop:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: graphqlshopservicename
+  labels:
+    app: graphqlshopservicelabel
+spec:
+  selector:
+    app: graphqlshoppodlabel
+  type: LoadBalancer
+  ports: 
+    - port: 80
+      targetPort: 8000
