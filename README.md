@@ -50,3 +50,63 @@ This program exposes a GraphQL API at /graphql
   }
 }
 ```
+
+## It supports the following mutations
+
+### Creates a new product
+```graphql
+mutation {
+  createProduct(title: {str product_title}, inventoryCount: {int inventory_count}, price: { float product_price }) {
+    status
+    description
+    product {
+      id
+      title
+      price
+      inventoryCount
+    }
+  }
+}
+```
+
+### Deletes a product
+```graphql
+mutation{
+	deleteProduct(id: {str product_id}){
+    status
+    description
+  } 
+}
+```
+
+### Creates a new cart
+
+
+### Deletes a cart
+
+
+### Adds a product to a cart
+
+
+### Removes a product from a cart
+
+
+### Purchase a cart
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
