@@ -18,7 +18,7 @@ This API supports two node types ProductType and CartType.
 You can also download this public docker image and run it. It exposed port 8000.
 https://cloud.docker.com/u/abdulbahajaj/repository/docker/abdulbahajaj/graphqlshop
 
-I have also deployed it to digital ocean Kubernates at the following link
+I have also deployed it to digitalocean's Kubernetes at the following link
 
 http://157.230.75.162/graphql
 
