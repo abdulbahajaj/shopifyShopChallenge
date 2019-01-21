@@ -7,7 +7,7 @@ Global ids are formated as follows: "NodeType_InternalID". For example ProductTy
 This API supports two node types ProductType and CartType.
 
 ## How to run the program:
-1) Create a virtual environment with python 3.7 by running "virtualenv -p python3 {environmentName}" in your terminate.
+1) Create a virtual environment with python 3.7 by running "virtualenv -p python3 {environmentName}" in your terminal.
 2) Activate the environment by running "source {environmentName}/bin/activate"
 3) Pull this repo
 4) Go to the folder containing the repo in your terminal
@@ -24,7 +24,7 @@ http://157.230.75.162/graphql
 
 
 ## How to run tests
-1) Create a virtual environment with python 3.7 by running "virtualenv -p python3 {environmentName}" in your terminate.
+1) Create a virtual environment with python 3.7 by running "virtualenv -p python3 {environmentName}" in your terminal.
 2) Activate the environment by running "source {environmentName}/bin/activate"
 3) Pull this repo
 4) Go to the folder containing the repo in your terminal
@@ -57,7 +57,7 @@ It also has one cart with Milk and Cheese in it
 
 ## It supports the following queries.
 
-Note: to run some of the example you might have to press "Prettify"
+Note: to run some of the examples you might have to press "Prettify"
 
 ### Retrieves all products regardless of whether or not there is available inventory.
 ```graphql
