@@ -3,6 +3,9 @@ This is the barebones of an online marketplace. It is implemented using Django, 
 
 This program exposes a GraphQL API at /graphql
 
+Global ids are formated as follows: "NodeType_InternalID". For example ProductType_1 or CartType_1.
+This API supports two node types ProductType and CartType.
+
 ## It supports the following queries.
 
 ### Retrieves all products regardless of whether or not there is available inventory.
