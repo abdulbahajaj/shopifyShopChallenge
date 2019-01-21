@@ -19,6 +19,7 @@ This API supports two node types ProductType and CartType.
 
 ## Default data
 Currently the following products are in the shop:
+```json
 [
   {"title": "Cheese", "price": 4.3, "inventory_count": 10}, 
   {"title": "Milk", "price": 6.3, "inventory_count": 13}, 
@@ -31,7 +32,7 @@ Currently the following products are in the shop:
   {"title": "Mushrooms", "price": 2.8, "inventory_count": 17}, 
   {"title": "Yams", "price": 8.8, "inventory_count": 13}
 ]
-
+```
 It also has one cart with Milk and Cheese in it
 
 
