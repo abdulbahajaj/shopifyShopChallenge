@@ -5,7 +5,7 @@ This program exposes a GraphQL API at /graphql
 
 ## It supports the following queries.
 
-### Retrieves all products regardless of whether or not there is available inventory.
+### Retrieves all products regardless of whether or not there is available inventory.e
 ```graphql
 {
 	allProducts(availableOnly: false) {
