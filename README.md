@@ -203,8 +203,7 @@ mutation{
   }
 }
 ```
-example: http://157.230.75.162/graphql?query=mutation%7B%0A%20%20purchaseCart(id%3A%20%22CartType_1%22)%7B%0A%20%20%20%20status%0A%20%20%20%20description%0A%20%20%7D%0A%7D%0A&operationName=undefined
-
+example: http://157.230.75.162/graphql?query=mutation%20%7B%0A%20%20purchaseCart(id%3A%20%22CartType_1%22)%20%7B%0A%20%20%20%20status%0A%20%20%20%20description%0A%20%20%7D%0A%7D%0A&operationName=undefined
 
 
 
