@@ -55,6 +55,8 @@ It also has one cart with Milk and Cheese in it
 
 ## It supports the following queries.
 
+Note: to run some of the example you might have to press "Prettify"
+
 ### Retrieves all products regardless of whether or not there is available inventory.
 ```graphql
 {
