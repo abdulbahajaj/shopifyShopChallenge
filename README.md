@@ -57,6 +57,7 @@ It also has one cart with Milk and Cheese in it
   }
 }
 ```
+example: http://157.230.75.162/graphql?query=%7B%0A%20%20allProducts(availableOnly%3A%20false)%20%7B%0A%20%20%20%20id%0A%20%20%20%20title%0A%20%20%20%20price%0A%20%20%20%20inventoryCount%0A%20%20%7D%0A%7D%0A&operationName=null
 
 ### Retrieves all products with available inventory.
 ```graphql
