@@ -8,8 +8,9 @@ This program exposes a GraphQL API at 0.0.0.0/graphql.
 2) Activate the environment by running "source {environmentName}/bin/activate"
 3) Pull this repo
 4) Go to the folder containing the repo in your terminal
-5) run "pip install requirements.txt"
-6) run "python manage.py runserver"
+5) Run "pip install requirements.txt"
+6) Run "python manage.py runserver" to run the server
+7) The graphql api should be now available in 0.0.0.0/graphql
 
 
 
