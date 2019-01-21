@@ -16,6 +16,7 @@ This program exposes a GraphQL API at /graphql
 }
 
 ### Retrieves all products with available inventory
+```graphql
 {
   allProducts(availableOnly: false) {
     id
@@ -24,7 +25,7 @@ This program exposes a GraphQL API at /graphql
     inventoryCount
   }
 }
-
+```
 
 ### Retrieves all carts
 {
