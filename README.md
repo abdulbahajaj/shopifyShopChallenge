@@ -70,6 +70,7 @@ example: http://157.230.75.162/graphql?query=%7B%0A%20%20allProducts(availableOn
   }
 }
 ```
+example: http://157.230.75.162/graphql?query=%7B%0A%20%20allProducts(availableOnly%3A%20true)%20%7B%0A%20%20%20%20id%0A%20%20%20%20title%0A%20%20%20%20price%0A%20%20%20%20inventoryCount%0A%20%20%7D%0A%7D%0A&operationName=null
 
 ### Retrieves all carts with the products that are in them.
 ```graphql
@@ -92,6 +93,7 @@ example: http://157.230.75.162/graphql?query=%7B%0A%20%20allProducts(availableOn
   }
 }
 ```
+example: http://157.230.75.162/graphql?query=%7B%0A%20%20allCarts%7B%0A%20%20%20%20edges%7B%0A%20%20%20%20%20%20node%7B%0A%20%20%20%20%20%20%20%20id%0A%20%20%20%20%20%20%20%20created%0A%20%20%20%20%20%20%20%20purchased%0A%20%20%20%20%20%20%20%20totalDollarAmount%0A%20%20%20%20%20%20%20%20products%7B%0A%20%20%20%20%20%20%20%20%20%20id%0A%20%20%20%20%20%20%20%20%20%20title%0A%20%20%20%20%20%20%20%20%20%20inventoryCount%0A%20%20%20%20%20%20%20%20%20%20price%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A&operationName=null
 
 ## It supports the following mutations
 
@@ -110,6 +112,7 @@ mutation {
   }
 }
 ```
+example: http://157.230.75.162/graphql?query=mutation%20%7B%0A%20%20createProduct(title%3A%20%22Witloof%22%2C%20inventoryCount%3A%2010%2C%20price%3A%202)%20%7B%0A%20%20%20%20status%0A%20%20%20%20description%0A%20%20%20%20product%20%7B%0A%20%20%20%20%20%20id%0A%20%20%20%20%20%20title%0A%20%20%20%20%20%20price%0A%20%20%20%20%20%20inventoryCount%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A&operationName=undefined
 
 ### Deletes a product
 ```graphql
@@ -120,6 +123,7 @@ mutation{
   } 
 }
 ```
+example: http://157.230.75.162/graphql?query=mutation%7B%0A%20%20deleteProduct(id%3A%20%22ProductType_12%22)%7B%0A%20%20%20%20status%0A%20%20%20%20description%0A%20%20%7D%20%0A%7D%0A&operationName=undefined
 
 ### Creates a new cart
 ```graphql
