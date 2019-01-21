@@ -12,10 +12,29 @@ This program exposes a GraphQL API at 0.0.0.0/graphql.
 6) Run "python manage.py runserver" to run the server
 7) The graphql api should be now available in 0.0.0.0/graphql
 
-
-
 Global ids are formated as follows: "NodeType_InternalID". For example ProductType_1 or CartType_1.
 This API supports two node types ProductType and CartType.
+
+
+
+## Default data
+Currently the following products are in the shop:
+[
+  {"title": "Cheese", "price": 4.3, "inventory_count": 10}, 
+  {"title": "Milk", "price": 6.3, "inventory_count": 13}, 
+  {"title": "Tomato", "price": 9.4, "inventory_count": 23}, 
+  {"title": "Banana", "price": 10.4, "inventory_count": 43}, 
+  {"title": "Potato", "price": 13.4, "inventory_count": 45}, 
+  {"title": "Bread", "price": 5.8, "inventory_count": 85}, 
+  {"title": "Bagels", "price": 7.8, "inventory_count": 77}, 
+  {"title": "Chokos", "price": 4.8, "inventory_count": 47}, 
+  {"title": "Mushrooms", "price": 2.8, "inventory_count": 17}, 
+  {"title": "Yams", "price": 8.8, "inventory_count": 13}
+]
+
+It also has one cart with Milk and Cheese in it
+
+
 
 ## It supports the following queries.
 
