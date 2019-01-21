@@ -56,26 +56,26 @@ This program exposes a GraphQL API at /graphql
 ### Creates a new product
 ```graphql
 mutation {
-createProduct(title: {str product_title}, inventoryCount: {int inventory_count}, price: { float product_price }) {
-status
-description
-product {
-id
-title
-price
-inventoryCount
-}
-}
+  createProduct(title: {str product_title}, inventoryCount: {int inventory_count}, price: { float product_price }) {
+    status
+    description
+    product {
+      id
+      title
+      price
+      inventoryCount
+    }
+  }
 }
 ```
 
 ### Deletes a product
 ```graphql
 mutation{
-deleteProduct(id: {str product_id}){
-status
-description
-} 
+  deleteProduct(id: {str product_id}){
+    status
+    description
+  } 
 }
 ```
 
@@ -101,7 +101,7 @@ description
 
 
 
-jj
+
 
 
 
