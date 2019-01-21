@@ -80,19 +80,66 @@ mutation{
 ```
 
 ### Creates a new cart
-
+```graphql
+mutation{
+  createCart{
+    status
+    description
+    cart{
+      id
+      products{
+        id
+        price
+        title
+        inventoryCount
+      }
+    }
+  }
+}
+```
 
 ### Deletes a cart
-
+```graphql
+mutation{
+	deleteCart(id: "CartType_1"){
+    status
+    description
+  }
+}
+```
 
 ### Adds a product to a cart
-
+```graphql
+mutation{
+	deleteCart(id: "CartType_1"){
+    status
+    description
+  }
+}
+```
 
 ### Removes a product from a cart
-
+```graphql
+mutation{
+	removeProductFromCart(
+    cartId: "CartType_1"
+    productId: "ProductType_1"
+  ){
+    status
+    description
+  }
+}
+```
 
 ### Purchase a cart
-
+```graphql
+mutation{
+  purchaseCart(id: "CartType_3"){
+    status
+    description
+  }
+}
+```
 
 
 
